@@ -1,3 +1,32 @@
-<p>
-  Start editing to see some magic happen :)
-</p>
+<div class="container">
+
+	<div class="jumbotron mt-4">
+
+		<h1 class="display-5" align="center">Consumo de la API de MARVEL Comics</h1>
+		<p align="center">Selecciona una opción para obtener más información</p>
+
+		<div class="row" align="center">
+			<div class="col-3 col-lg centrar-contenido">
+				<button type="button" class="btn btn-dark" (click)="createComponentPersonajes()" >Personajes</button>
+			</div>
+			<div class="col-3 col-lg centrar-contenido">
+				<button type="button" class="btn btn-dark" (click)="createComponentComics()">Comics</button>
+			</div>
+			<div class="col-3 col-lg centrar-contenido">
+				<button type="button" class="btn btn-dark" (click)="createComponentSeries()">Series</button>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+<br>
+
+<div class="container">
+
+	<!--<router-outlet></router-outlet>-->
+
+	<ng-container #componenteDinamico></ng-container>
+
+</div>
