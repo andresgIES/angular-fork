@@ -15,6 +15,11 @@ import { HttpClientModule } from "@angular/common/http";
     ConsultarPersonajeComponent,
     ConsultarSeriesComponent
   ],
+  entryComponents: [
+    ConsultarComicComponent,
+    ConsultarPersonajeComponent,
+    ConsultarSeriesComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
